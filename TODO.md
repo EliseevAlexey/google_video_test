@@ -16,7 +16,7 @@
     - [ ] GCS
     - [ ] GKE
     - [ ] Spanner
-    - [ ] Build + Gerrit + GIT
+    - [x] Build + Gerrit + GIT
     - [ ] Monitoring
     - [ ] Logging
     - [ ] SQL
