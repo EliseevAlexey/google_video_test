@@ -6,9 +6,9 @@ provider "google" {
 }
 
 module "run" {
-  source = "modules/run"
+  source = "./modules/run"
 }
 
-module "http_handler" {
-  source = "modules/functions/http_function"
-}
+#module "http_handler" {
+#  source = "modules/functions/http_function"
+#}

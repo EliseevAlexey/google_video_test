@@ -1,5 +1,5 @@
 resource "google_cloud_run_service" "run-service" {
-  name     = "${var.project_name}-run-service"
+  name     = "run-service"
   location = var.region
 
   template {
