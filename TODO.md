@@ -17,8 +17,8 @@
     - [ ] GKE
     - [ ] Spanner
     - [ ] Monitoring
-    - [ ] Logging
     - [ ] SQL
+    - [X] Logging 
     - [x] Build + Gerrit + GIT
     - [x] Cloud Run
     - [x] IAM
