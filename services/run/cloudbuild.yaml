@@ -6,7 +6,7 @@ steps:
     args: [ 'push', 'gcr.io/$PROJECT_ID/run:latest' ]
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     entrypoint: gcloud
-    args: ['run', 'deploy', '--image', 'gcr.io/$PROJECT_ID/run:latest', '--region', 'us-west1']
+    args: ['run', 'deploy', 'run-service', '--image', 'gcr.io/$PROJECT_ID/run:latest', '--region', 'us-west1']
 
 images:
   - 'gcr.io/$PROJECT_ID/run'
