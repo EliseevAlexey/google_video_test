@@ -1,4 +1,4 @@
-module main
+module main.com
 
 go 1.22.2
 
