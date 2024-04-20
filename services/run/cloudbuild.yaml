@@ -11,6 +11,7 @@ steps:
       'run-service',
       '--image', 'gcr.io/$PROJECT_ID/run:latest',
       '--region', 'us-west1',
+      '--service-account',  '$SERVICE_ACCOUNT'
     ]
 
 images:
