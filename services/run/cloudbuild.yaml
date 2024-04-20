@@ -11,7 +11,7 @@ steps:
       'run-service',
       '--image', 'gcr.io/$PROJECT_ID/run:latest',
       '--region', 'us-west1',
-      '--service-account',  '$SERVICE_ACCOUNT'
+      '--service-account',  'terraform-sa@primeval-wind-420823.iam.gserviceaccount.com'
     ]
 
 images:
