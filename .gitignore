@@ -3,6 +3,10 @@
 *.iml
 
 
+# Build
+services/functions/**/build
+
+
 # Terraform
 terraform/.terraform
 terraform/terraform.tf*
@@ -10,7 +14,3 @@ terraform/terraform.tf*
 
 # Credentials
 .credentials
-
-
-# Gloud Functions
-functions/*/build

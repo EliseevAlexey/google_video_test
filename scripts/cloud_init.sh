@@ -12,9 +12,14 @@ SERVICE_ACCOUNT_EMAIL="${SERVICE_ACCOUNT_NAME}@${PROJECT_ID}.iam.gserviceaccount
 gcloud auth login
 
 
+# Config Defaults
+gcloud config set functions/region "$(yq e '.google.region' ../config/base.yaml)"
+
+
 # Enable services
 gcloud services enable \
          cloudbuild.googleapis.com \
+     cloudfunctions.googleapis.com \
             compute.googleapis.com \
   containerregistry.googleapis.com \
                 iam.googleapis.com \
