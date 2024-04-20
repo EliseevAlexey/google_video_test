@@ -5,9 +5,8 @@ steps:
   - name: 'gcr.io/cloud-builders/docker'
     args: [ 'push', 'gcr.io/$PROJECT_ID/run:latest' ]
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
-    entrypoint: gcloud
     args: [
-      'run', 'deploy',
+      'gcloud', 'run', 'deploy',
       'run-service',
       '--image', 'gcr.io/$PROJECT_ID/run:latest',
       '--region', 'us-west1',
