@@ -10,6 +10,7 @@ import (
 func init() {
 	functions.HTTP("HttpFunction", httpFunction)
 }
+func main() {}
 
 func httpFunction(w http.ResponseWriter, _ *http.Request) {
 	fmt.Fprintln(w, "Hello World: Http function")
