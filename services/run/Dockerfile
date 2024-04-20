@@ -1,7 +1,7 @@
 FROM golang:1.22 AS build
-COPY go.mod *.go ./
-RUN CGO_ENABLED=0 GOOS=linux go build -o /run
+COPY src/go.mod src/*.go ./
+RUN CGO_ENABLED=0 GOOS=linux go build -o /api
 
 FROM alpine:3.19.1
-COPY --from=build /run .
-ENTRYPOINT ["./run"]
+COPY --from=build /api .
+ENTRYPOINT ["./api"]
