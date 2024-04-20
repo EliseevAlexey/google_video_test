@@ -32,4 +32,4 @@
   - [x] gcloud
   - [x] curl
   - [x] jq/yq
-- [x] containerization conceptions 
+- [x] containerization conceptions
