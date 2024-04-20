@@ -4,7 +4,7 @@ steps:
 #    entrypoint: 'go'
 #    args: [ 'build', '-o', 'main' ]
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
-    dir: 'services/functions/http_function/sr2'
+    dir: 'services/functions/http_function/src2'
     args: [
       'gcloud', 'functions', 'deploy',
       'http-function',
