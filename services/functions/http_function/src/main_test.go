@@ -10,7 +10,7 @@ func TestHttpFunction(t *testing.T) {
 	req.Header.Add("Content-Type", "application/json")
 
 	rr := httptest.NewRecorder()
-	httpFunction(rr, req)
+	HttpFunction(rr, req)
 
 	expected := "Hello World: Http function\n"
 	if actual := rr.Body.String(); actual != expected {

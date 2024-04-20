@@ -10,9 +10,9 @@ import (
 func main() {}
 
 func init() {
-	functions.HTTP("HttpFunction", httpFunction)
+	functions.HTTP("HttpFunction", HttpFunction)
 }
 
-func httpFunction(w http.ResponseWriter, _ *http.Request) {
+func HttpFunction(w http.ResponseWriter, _ *http.Request) {
 	fmt.Fprintln(w, "Hello World: Http function")
 }
