@@ -17,7 +17,8 @@ gcloud services enable \
          cloudbuild.googleapis.com \
             compute.googleapis.com \
   containerregistry.googleapis.com \
-                run.googleapis.com
+                run.googleapis.com \
+      secretmanager.googleapis.com
 
 
 # Create a Service Account if needed
