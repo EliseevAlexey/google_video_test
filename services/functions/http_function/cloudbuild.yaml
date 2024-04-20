@@ -2,16 +2,16 @@ steps:
   - name: 'golang'
     dir: 'services/functions/http_function/src'
     entrypoint: 'go'
-    args: [ 'build', '-o', 'main' ]
+    args: [ 'build', '-o', '../build/main' ]
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
-    dir: 'services/functions/http_function/src'
+    dir: 'services/functions/http_function'
     args: [
       'gcloud', 'functions', 'deploy',
       'http-function',
       '--gen2',
       '--runtime', 'go122',
       '--region', 'us-west1',
-      '--source', '.',
+      '--source', 'build/main',
       '--entry-point', 'HttpFunction',
       '--trigger-http',
       '--allow-unauthenticated',
