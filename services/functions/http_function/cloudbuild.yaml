@@ -5,7 +5,7 @@ steps:
       'gcloud', 'functions', 'deploy',
       'http-function',
       '--gen2',
-      '--runtime', '$_GOOGLE_RUNTIME',
+      '--runtime', 'go122',
       '--region', '$LOCATION',
       '--source', '.',
       '--entry-point', 'HelloWorld',
