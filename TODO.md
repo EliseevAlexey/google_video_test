@@ -34,4 +34,3 @@
   - [x] jq/yq
 - [x] containerization conceptions
 
-
