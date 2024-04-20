@@ -15,8 +15,5 @@ steps:
       '--service-account', 'terraform-sa@primeval-wind-420823.iam.gserviceaccount.com'
     ]
 
-images:
-  - 'gcr.io/$PROJECT_ID/run'
-
 options:
   logging: CLOUD_LOGGING_ONLY
