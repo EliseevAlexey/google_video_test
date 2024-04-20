@@ -1,0 +1,35 @@
+- [ ] Go
+    - [ ] Goroutines
+    - [ ] Go + SQL
+    - [ ] Go testing
+        - [ ] unit
+        - [ ] integration
+        - [ ] mock
+    - [x] Go server
+- [ ] Cloud
+    - [ ] Functions
+      - [ ] Event Handler
+      - [ ] HTTP Handler
+    - [ ] Pub/Sub
+    - [ ] Task
+    - [ ] Workflow
+    - [ ] GCS
+    - [ ] GKE
+    - [ ] Spanner
+    - [ ] Build + Gerrit + GIT
+    - [ ] Monitoring
+    - [ ] Logging
+    - [ ] SQL
+    - [x] Cloud Run
+    - [x] IAM
+- [ ] REST and JSON/JSON Schemas
+- [ ] gRPC
+- [ ] Vision Warehouse
+- [ ] Transcoding
+- [ ] Video processing for ML purposes
+- [x] Terraform
+- [x] Bash scripting
+  - [x] gcloud
+  - [x] curl
+  - [x] jq/yq
+- [x] containerization conceptions 

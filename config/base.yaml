@@ -1,0 +1,4 @@
+google:
+  project_id: primeval-wind-420823
+  project_name: terraform
+  service_account_name: terraform-sa
