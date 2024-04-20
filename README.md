@@ -8,6 +8,11 @@ PROJECT_ID:
 primeval-wind-420823
 ```
 
+
+```shell
+gcloud config get-value project
+```
+
 ---
 Install utils
 ```shell
