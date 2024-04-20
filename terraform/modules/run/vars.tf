@@ -6,8 +6,8 @@ variable "project_name" {
   default = "terraform"
 }
 
-variable "service_account_name" {
-  default = "terraform-sa"
+variable "service_account_email" {
+  default = "terraform-sa@primeval-wind-420823.iam.gserviceaccount.com"
 }
 
 variable "region" {

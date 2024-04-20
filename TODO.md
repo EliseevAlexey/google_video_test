@@ -16,10 +16,10 @@
     - [ ] GCS
     - [ ] GKE
     - [ ] Spanner
-    - [x] Build + Gerrit + GIT
     - [ ] Monitoring
     - [ ] Logging
     - [ ] SQL
+    - [x] Build + Gerrit + GIT
     - [x] Cloud Run
     - [x] IAM
 - [ ] REST and JSON/JSON Schemas
