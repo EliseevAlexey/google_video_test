@@ -11,7 +11,7 @@ steps:
       '--gen2',
       '--runtime', 'go122',
       '--region', 'us-west1',
-      '--source', 'build/main',
+      '--source', 'build',
       '--entry-point', 'HttpFunction',
       '--trigger-http',
       '--allow-unauthenticated',
