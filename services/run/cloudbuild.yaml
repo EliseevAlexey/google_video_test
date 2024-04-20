@@ -1,8 +1,9 @@
 steps:
   - name: 'gcr.io/cloud-builders/docker'
-    script: |
-      docker build -t gcr.io/$PROJECT_ID/run:latest ./services/run/
+    args: [ 'build', '-t', 'gcr.io/$PROJECT_ID/run:latest', './services/run/Dockerfile' ]
+
 images:
   - 'gcr.io/$PROJECT_ID/image-name'
+
 options:
   logging: CLOUD_LOGGING_ONLY
