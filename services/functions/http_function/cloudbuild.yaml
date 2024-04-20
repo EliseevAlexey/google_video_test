@@ -1,18 +1,18 @@
 steps:
-  - name: 'golang'
-    dir: 'services/functions/http_function/src'
-    entrypoint: 'go'
-    args: [ 'build', '-o', 'main' ]
+#  - name: 'golang'
+#    dir: 'services/functions/http_function/src'
+#    entrypoint: 'go'
+#    args: [ 'build', '-o', 'main' ]
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
-    dir: 'services/functions/http_function'
+    dir: 'services/functions/http_function/sr2'
     args: [
       'gcloud', 'functions', 'deploy',
       'http-function',
       '--gen2',
       '--runtime', 'go122',
       '--region', 'us-west1',
-      '--source', 'src',
-      '--entry-point', 'HttpFunction',
+      '--source', '.',
+      '--entry-point', 'HelloWorld',
       '--trigger-http',
       '--allow-unauthenticated',
       '--service-account', 'terraform-sa@primeval-wind-420823.iam.gserviceaccount.com',
