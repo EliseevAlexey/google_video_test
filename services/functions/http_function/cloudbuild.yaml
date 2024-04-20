@@ -1,7 +1,8 @@
 steps:
   - name: 'golang'
     dir: 'services/functions/http_function'
-    args: [ 'go', 'build' ]
+    entrypoint: 'go'
+    args: [ 'build' ]
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     dir: 'services/functions/http_function'
     args: [
