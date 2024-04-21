@@ -1,21 +1,21 @@
 steps:
   - name: 'gcr.io/cloud-builders/docker'
     dir: 'services/run'
-    args: [ 'build', '-t', 'us-west2-docker.pkg.dev/$PROJECT_ID/run:latest', '.' ]
+    args: [ 'build', '-t', 'us-west2-docker.pkg.dev/$PROJECT_ID/run/run-service:latest', '.' ]
   - name: 'gcr.io/cloud-builders/docker'
-    args: [ 'push', 'us-west2-docker.pkg.dev/$PROJECT_ID/run:latest' ]
+    args: [ 'push', 'us-west2-docker.pkg.dev/$PROJECT_ID/run/run-service:latest' ]
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     args: [
       'gcloud', 'run', 'deploy',
       'run-service',
-      '--image', 'us-west2-docker.pkg.dev/$PROJECT_ID/run:latest',
+      '--image', 'us-west2-docker.pkg.dev/$PROJECT_ID/run/run-service:latest',
       '--region', 'us-west2',
       '--service-account',  'terraform-sa@$PROJECT_ID.iam.gserviceaccount.com',
       '--allow-unauthenticated',
     ]
 
 images:
-  - 'us-west2-docker.pkg.dev/$PROJECT_ID/run'
+  - 'us-west2-docker.pkg.dev/$PROJECT_ID/run/run-service'
 
 options:
   logging: CLOUD_LOGGING_ONLY
