@@ -1,20 +1,20 @@
 - [ ] Go
     - [ ] Goroutines
-    - [ ] Go + SQL
     - [ ] Go testing
         - [ ] unit
         - [ ] integration
         - [ ] mock
+    - [x] Go + SQL
     - [x] Go server
 - [ ] Cloud
-    - [ ] Functions
-      - [ ] Event Handler
-      - [x] HTTP Handler
-    - [ ] Pub/Sub
     - [ ] Task
     - [ ] Workflow
     - [ ] GKE
-    - [ ] SQL
+    - [?] SQL
+    - [x] Functions
+      - [x] Event Handler
+      - [x] HTTP Handler
+    - [x] Pub/Sub
     - [x] GCS
     - [x] Monitoring
     - [x] Logging 

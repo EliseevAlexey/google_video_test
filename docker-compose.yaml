@@ -5,3 +5,19 @@ services:
       context: services/run
     ports:
       - "8080:8080"
+  db:
+    image: postgres:15-alpine
+    restart: always
+    environment:
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "postgres_password"
+      POSTGRES_DB: "postgres"
+      PGDATA: /var/lib/postgresql/data/pgdata
+    ports:
+      - '25432:5432'
+    volumes:
+      - db:/var/lib/postgresql/data
+
+volumes:
+  db:
+    driver: local
