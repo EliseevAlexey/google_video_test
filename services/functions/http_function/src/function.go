@@ -8,9 +8,9 @@ import (
 )
 
 func init() {
-	functions.HTTP("HelloWorld", helloWorld)
+	functions.HTTP("CloudHttpFunction", cloudHttpFunction)
 }
 
-func helloWorld(w http.ResponseWriter, _ *http.Request) {
-	fmt.Fprintln(w, "Hello, World!")
+func cloudHttpFunction(w http.ResponseWriter, _ *http.Request) {
+	fmt.Fprintln(w, "Hello: cloudHttpFunction")
 }

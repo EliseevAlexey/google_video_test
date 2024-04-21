@@ -3,12 +3,12 @@ steps:
     dir: 'services/functions/http_function/src'
     args: [
       'gcloud', 'functions', 'deploy',
-      'http-function',
+      'event-function',
       '--gen2',
       '--runtime', 'go122',
       '--region', 'us-west1',
       '--source', '.',
-      '--entry-point', 'CloudHttpFunction',
+      '--entry-point', 'CloudEventFunction',
       '--trigger-http',
       '--allow-unauthenticated',
       '--service-account', 'terraform-sa@primeval-wind-420823.iam.gserviceaccount.com',

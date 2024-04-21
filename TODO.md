@@ -9,7 +9,7 @@
 - [ ] Cloud
     - [ ] Functions
       - [ ] Event Handler
-      - [ ] HTTP Handler
+      - [x] HTTP Handler
     - [ ] Pub/Sub
     - [ ] Task
     - [ ] Workflow
