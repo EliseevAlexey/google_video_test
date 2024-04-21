@@ -1,3 +1,5 @@
+github.com/EliseevAlexey/google_video_test v0.0.0-20240421233059-7f92f97ca275 h1:zjrfFbwuzp+ujEl9A1FzAQGpOW8g7Jed7Y7++/pWanw=
+github.com/EliseevAlexey/google_video_test v0.0.0-20240421233059-7f92f97ca275/go.mod h1:8Usk2eDNU7G0NZYImUryjUEOD+2X+aSoIwUXlb7aRls=
 github.com/google/go-cmp v0.6.0 h1:ofyhxvXcZhMsU5ulbFiLKl/XBFqE1GSq7atu8tAmTRI=
 github.com/google/go-cmp v0.6.0/go.mod h1:17dUlkBOakJ0+DkrSSNjCkIjxS6bF9zb3elmeNGIjoY=
 golang.org/x/net v0.21.0 h1:AQyQV4dYCvJ7vGmJyKki9+PBdyvhkSd8EIx/qb0AYv4=

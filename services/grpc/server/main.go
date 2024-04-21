@@ -5,7 +5,7 @@ import (
 	"log"
 	"net"
 
-	pb "./protobuf/example.com"
+	pb "github.com/EliseevAlexey/google_video_test/services/grpc/protobuf/example.com"
 	"google.golang.org/grpc"
 )
 
