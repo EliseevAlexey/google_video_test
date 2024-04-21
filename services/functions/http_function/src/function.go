@@ -2,9 +2,8 @@ package function
 
 import (
 	"fmt"
-	"net/http"
-
 	"github.com/GoogleCloudPlatform/functions-framework-go/functions"
+	"net/http"
 )
 
 func init() {
