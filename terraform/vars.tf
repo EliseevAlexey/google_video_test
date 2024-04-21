@@ -11,11 +11,11 @@ variable "service_account_name" {
 }
 
 variable "region" {
-  default = "us-west1"
+  default = "us-west2"
 }
 
 variable "zone" {
-  default = "us-west1-b"
+  default = "us-west2-b"
 }
 
 variable "os_image" {
