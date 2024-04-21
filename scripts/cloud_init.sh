@@ -18,19 +18,20 @@ gcloud config set functions/region "$(yq e '.google.region' ../config/base.yaml)
 
 # Enable services
 gcloud services enable \
-         cloudbuild.googleapis.com \
-     cloudfunctions.googleapis.com \
-            compute.googleapis.com \
-  containerregistry.googleapis.com \
-           eventarc.googleapis.com \
-                iam.googleapis.com \
-            logging.googleapis.com \
-         monitoring.googleapis.com \
-             pubsub.googleapis.com \
-                run.googleapis.com \
-      secretmanager.googleapis.com \
-      sql-component.googleapis.com \
-            storage.googleapis.com
+           cloudbuild.googleapis.com \
+       cloudfunctions.googleapis.com \
+ cloudresourcemanager.googleapis.com \
+              compute.googleapis.com \
+    containerregistry.googleapis.com \
+             eventarc.googleapis.com \
+                  iam.googleapis.com \
+              logging.googleapis.com \
+           monitoring.googleapis.com \
+               pubsub.googleapis.com \
+                  run.googleapis.com \
+        secretmanager.googleapis.com \
+        sql-component.googleapis.com \
+              storage.googleapis.com
 
 
 # Create a Service Account if needed

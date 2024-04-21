@@ -11,7 +11,11 @@ func init() {
 	functions.CloudEvent("CloudEventFunction", cloudEventFunction)
 }
 
-func cloudEventFunction(_ context.Context, _ cloudevents.Event) error {
-	fmt.Println("OK")
+func cloudEventFunction(_ context.Context, e cloudevents.Event) error {
+	fmt.Printf("OK %s\n", e.String())
 	return nil
+}
+
+type TestEvent struct {
+	name string
 }
