@@ -1,6 +1,6 @@
 steps:
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
-    dir: 'services/functions/http_function/src'
+    dir: 'services/functions/event_function/src'
     args: [
       'gcloud', 'functions', 'deploy',
       'event-function',

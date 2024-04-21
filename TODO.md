@@ -14,7 +14,6 @@
     - [ ] Task
     - [ ] Workflow
     - [ ] GKE
-    - [ ] Spanner
     - [ ] SQL
     - [x] GCS
     - [x] Monitoring
