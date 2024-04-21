@@ -12,7 +12,7 @@ func init() {
 }
 
 func cloudEventFunction(_ context.Context, e cloudevents.Event) error {
-	fmt.Printf("OK: %s\n", e.DataEncoded)
+	fmt.Printf("OK: %s\n", e.Data())
 	return nil
 }
 
