@@ -10,7 +10,8 @@ steps:
       'run-service',
       '--image', 'gcr.io/$PROJECT_ID/run:latest',
       '--region', 'us-west1',
-      '--service-account',  'terraform-sa@primeval-wind-420823.iam.gserviceaccount.com'
+      '--service-account',  'terraform-sa@primeval-wind-420823.iam.gserviceaccount.com',
+      '--allow-unauthenticated',
     ]
 
 images:
