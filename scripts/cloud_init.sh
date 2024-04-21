@@ -22,6 +22,7 @@ gcloud services enable \
      cloudfunctions.googleapis.com \
             compute.googleapis.com \
   containerregistry.googleapis.com \
+           eventarc.googleapis.com \
                 iam.googleapis.com \
             logging.googleapis.com \
          monitoring.googleapis.com \

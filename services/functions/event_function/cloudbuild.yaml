@@ -9,7 +9,7 @@ steps:
       '--region', 'us-west2',
       '--source', '.',
       '--entry-point', 'CloudEventFunction',
-      '--trigger-http',
+      '--trigger-topic', 'test-topic',
       '--allow-unauthenticated',
       '--service-account', 'terraform-sa@primeval-wind-420823.iam.gserviceaccount.com',
     ]
