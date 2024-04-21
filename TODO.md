@@ -13,10 +13,10 @@
     - [ ] Pub/Sub
     - [ ] Task
     - [ ] Workflow
-    - [ ] GCS
     - [ ] GKE
     - [ ] Spanner
     - [ ] SQL
+    - [x] GCS
     - [x] Monitoring
     - [x] Logging 
     - [x] Build + Gerrit + GIT

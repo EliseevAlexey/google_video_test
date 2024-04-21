@@ -4,5 +4,5 @@ resource "google_cloudfunctions_function" "http-function" {
   trigger_http          = true
   source_archive_bucket = ""
   runtime               = "go122"
-  entry_point           = "HelloWorld"
+  entry_point           = "HttpFunction"
 }
