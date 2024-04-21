@@ -21,11 +21,11 @@
     - [x] Build + Gerrit + GIT
     - [x] Cloud Run
     - [x] IAM
-- [ ] REST and JSON/JSON Schemas
 - [ ] gRPC
 - [ ] Vision Warehouse
 - [ ] Transcoding
 - [ ] Video processing for ML purposes
+- [x] REST and JSON/JSON Schemas
 - [x] Terraform
 - [x] Bash scripting
   - [x] gcloud
