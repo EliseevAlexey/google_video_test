@@ -1,4 +1,4 @@
-FROM golang:1.22 AS build
+FROM golang:1.22.2 AS build
 COPY src/go.mod src/*.go ./
 RUN CGO_ENABLED=0 GOOS=linux go build -o /api
 

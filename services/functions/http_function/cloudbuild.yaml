@@ -6,7 +6,7 @@ steps:
       'http-function',
       '--gen2',
       '--runtime', 'go122',
-      '--region', '$LOCATION',
+      '--region', 'us-west1',
       '--source', '.',
       '--entry-point', 'HelloWorld',
       '--trigger-http',

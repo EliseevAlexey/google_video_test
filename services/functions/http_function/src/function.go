@@ -11,7 +11,6 @@ func init() {
 	functions.HTTP("HelloWorld", helloWorld)
 }
 
-// helloWorld writes "Hello, World!" to the HTTP response.
-func helloWorld(w http.ResponseWriter, r *http.Request) {
+func helloWorld(w http.ResponseWriter, _ *http.Request) {
 	fmt.Fprintln(w, "Hello, World!")
 }
