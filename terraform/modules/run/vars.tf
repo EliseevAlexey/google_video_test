@@ -13,3 +13,7 @@ variable "service_account_email" {
 variable "region" {
   default = "us-west2"
 }
+
+variable "image" {
+  default = "us-west2-docker.pkg.dev/primeval-wind-420823/run:latest"
+}

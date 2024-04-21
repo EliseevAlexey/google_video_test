@@ -6,7 +6,7 @@ resource "google_cloud_run_service" "run-service" {
     spec {
       service_account_name = var.service_account_email
       containers {
-        image = "gcr.io/${var.project_id}/run:latest"
+        image = var.image
       }
     }
   }
