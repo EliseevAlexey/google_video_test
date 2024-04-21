@@ -1,5 +1,5 @@
 google:
   project_id: primeval-wind-420823
-  region: us-west1
+  region: us-west2
   project_name: terraform
   service_account_name: terraform-sa

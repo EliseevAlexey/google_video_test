@@ -6,7 +6,7 @@ steps:
       'event-function',
       '--gen2',
       '--runtime', 'go122',
-      '--region', 'us-west1',
+      '--region', 'us-west2',
       '--source', '.',
       '--entry-point', 'CloudEventFunction',
       '--trigger-http',

@@ -11,5 +11,5 @@ variable "service_account_email" {
 }
 
 variable "region" {
-  default = "us-west1"
+  default = "us-west2"
 }

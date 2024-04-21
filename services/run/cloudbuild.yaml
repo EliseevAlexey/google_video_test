@@ -9,7 +9,7 @@ steps:
       'gcloud', 'run', 'deploy',
       'run-service',
       '--image', 'gcr.io/$PROJECT_ID/run:latest',
-      '--region', 'us-west1',
+      '--region', 'us-west2',
       '--service-account',  'terraform-sa@$PROJECT_ID.iam.gserviceaccount.com',
       '--allow-unauthenticated',
     ]
